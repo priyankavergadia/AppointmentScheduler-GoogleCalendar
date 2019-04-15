@@ -50,5 +50,8 @@ Please read and follow the steps in the CONTRIBUTING.md.
 ## License
 See [LICENSE](LICENSE).
 
+## Disclaimer
+This code is a sample, should not be used for any potential production workloads.
+
 ## Terms
 Your use of this sample is subject to, and by using or downloading the sample files you agree to comply with, the [Google APIs Terms of Service](https://developers.google.com/terms/).
