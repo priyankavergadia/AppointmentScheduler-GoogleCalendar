@@ -27,7 +27,7 @@ appointment-scheduler@${PROJECTID}.iam.gserviceaccount.com
 1. Take the **Calendar ID** copied from the prior section and replace `<INSERT CALENDAR ID HERE>` on line 24 of `index.js`.
 ```js
 // Ex:
-const calendarId = '6ujc6j6rgfk02cp02vg6h38cs0@group.calendar.google.com';
+const calendarId = 'xxxxxxxxxxxxxxxxxxx0@group.calendar.google.com';
 ```
 1. Next copy the contents of the JSON file downloaded in the "Service Account Setup" section and paste it into the empty object on line 25 of `index.js` `const serviceAccount = {}`.
 ```js
