@@ -19,7 +19,7 @@ appointment-scheduler@${PROJECTID}.iam.gserviceaccount.com
 ```
 1. [Open Google Calendar](https://calendar.google.com). On the left, next to **Add a friend's calendar** click the **+** and select **New Calendar**
 1. Enter `Appointment Calendar` for the name of the calendar and select **Create Calendar**. Next, go to the `Appointment Calendar` calendar that will appear on the left column.
-1. Paste the email copied from the first step into the **Add people** field of the **Share with specific people** section and then select **Make changes to events** in the permissions dropdown and select **Send**.
+1. Paste the email copied from the previous step into the **Add people** field of the **Share with specific people** section and then select **Make changes to events** in the permissions dropdown and select **Send**.
 1. While still in Settings, scroll down and copy the **Calendar ID** in the **Integrate Calendar** section.
 
 #### Add Service Account and Calendar ID to Fulfillment
