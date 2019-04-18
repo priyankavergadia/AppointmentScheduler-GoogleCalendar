@@ -13,9 +13,7 @@
 
 #### DMV Appointment Calendar Setup
 1. Open the JSON file that was downloaded in the previous section and copy the email address indicated by the `client_email` field
-```js
-// Ex:
-appointment-scheduler@${PROJECTID}.iam.gserviceaccount.com
+```js // Ex:appointment-scheduler@${PROJECTID}.iam.gserviceaccount.com
 ```
 1. [Open Google Calendar](https://calendar.google.com). On the left, next to **Add a friend's calendar** click the **+** and select **New Calendar**
 1. Enter `Appointment Calendar` for the name of the calendar and select **Create Calendar**. Next, go to the `Appointment Calendar` calendar that will appear on the left column.
@@ -23,13 +21,14 @@ appointment-scheduler@${PROJECTID}.iam.gserviceaccount.com
 1. While still in Settings, scroll down and copy the **Calendar ID** in the **Integrate Calendar** section.
 
 #### Add Service Account and Calendar ID to Fulfillment
-1. Go to the `index.js` file in [Dialogflow's Fulfillment section](https://console.dialogflow.com/api-client/#/agent//fulfillment)
-1. Take the **Calendar ID** copied from the prior section and replace `<INSERT CALENDAR ID HERE>` on line 24 of `index.js`.
+Go to the `index.js` file in [Dialogflow's Fulfillment section](https://console.dialogflow.com/api-client/#/agent//fulfillment)
+
+Take the **Calendar ID** copied from the prior section and replace `<INSERT CALENDAR ID HERE>` on line 24 of `index.js`.
 ```js
 // Ex:
 const calendarId = 'xxxxxxxxxxxxxxxxxxx0@group.calendar.google.com';
 ```
-1. Next copy the contents of the JSON file downloaded in the "Service Account Setup" section and paste it into the empty object on line 25 of `index.js` `const serviceAccount = {}`.
+Next copy the contents of the JSON file downloaded in the "Service Account Setup" section and paste it into the empty object on line 25 of `index.js` `const serviceAccount = {}`.
 ```js
 //Ex:
     const serviceAccount = {
@@ -38,11 +37,11 @@ const calendarId = 'xxxxxxxxxxxxxxxxxxx0@group.calendar.google.com';
     ...
   };
 ```
-1. Click **Deploy** at at the bottom of the page.
+Click **Deploy** at at the bottom of the page.
 
 
 ## Running the sample
-1. In [Dialogflow's console](https://console.dialogflow.com), in the simulator on the right, query your Dialogflow agent with `Set an appointment at 4pm tomorrow for drivers license` and respond to the questions your Dialogflow agent asks.   After getting the required information, an appointment will be added to the "Appointment Calendar" calendar.
+In [Dialogflow's console](https://console.dialogflow.com), in the simulator on the right, query your Dialogflow agent with `Set an appointment at 4pm tomorrow for drivers license` and respond to the questions your Dialogflow agent asks.   After getting the required information, an appointment will be added to the "Appointment Calendar" calendar.
 
 ## How to make contributions?
 Please read and follow the steps in the CONTRIBUTING.md.
