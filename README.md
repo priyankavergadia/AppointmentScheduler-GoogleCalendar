@@ -14,7 +14,8 @@
 #### DMV Appointment Calendar Setup
 1. Open the JSON file that was downloaded in the previous section and copy the email address indicated by the `client_email` field
 ```js 
-// Ex:appointment-scheduler@${PROJECTID}.iam.gserviceaccount.com
+// Ex:
+appointment-scheduler@${PROJECTID}.iam.gserviceaccount.com
 ```
 1. [Open Google Calendar](https://calendar.google.com). On the left, next to **Add a friend's calendar** click the **+** and select **New Calendar**
 1. Enter `Appointment Calendar` for the name of the calendar and select **Create Calendar**. Next, go to the `Appointment Calendar` calendar that will appear on the left column.
